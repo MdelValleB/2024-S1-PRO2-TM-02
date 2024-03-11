@@ -1,0 +1,20 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<main>
+    <h1><%= mensaje %></h1>
+    <section>
+        <img src="/images/sirocco.jpeg" alt="auto" width="300px">
+    </section>
+    <ul>
+       <% for( let i = 0; i < index.length; i++ ) { %>
+        <li>Marca: <%= index[i].marca %>
+            Color: <%= index[i].color %>
+            Modelo: <%= index[i].modelo %>
+            Anio: <%= index[i].anio %>
+        
+        </li>
+       <% } %>
+    </ul>
+</main>
+<%- include('./partials/footer') %>
